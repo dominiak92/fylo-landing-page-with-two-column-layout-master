@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="cssreset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/26ee321572.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* font-family: 'Open Sans', sans-serif; font-family: 'Raleway', sans-serif; */
+      html {
+        font-size: 1rem;
+      }
+      .wrapper-bg {
+        background-color: rgba(248, 248, 254, 255);
+        height: 239vw;
+      }
+      .wrapper-content {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .wrapper-content2 {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      /* ------ MENU ------ */
+      .menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5vw;
+      }
+      .logo img {
+        padding: 4vw;
+        width: 20vw;
+      }
+      .navhead {
+        width: 43vw;
+        margin-right: 4vw;
+        justify-content: space-between;
+        display: flex;
+        font-family: sans-serif;
+      }
+      .navhead a {
+        color: black;
+        font-size: 3vw;
+        font-family: raleway, sans-serif;
+        text-decoration: none;
+      }
+      /* ------ SECTION 1 ------ */
+      .wrapper-slogan1 {
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
+        justify-content: center;
+        align-items: center;
+      }
+      .wrapperdesktop {
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
+        justify-content: center;
+        align-items: center;
+      }
+      .illustartion-1 {
+        margin-top: 13vw;
+        margin-bottom: 4.5vw;
+        background-image: url(images/illustration-1.svg);
+        background-size: contain;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 78vw;
+        height: 70vw;
+      }
+      .slogan {
+        display: flex;
+        flex-direction: column;
+      }
+      .slogan h2 {
+        font-family: Open-sans, sans-serif;
+        font-weight: 700;
+        font-size: 6.5vw;
+        text-align: center;
+        line-height: 9.3vw;
+        letter-spacing: -0.01em;
+      }
+      .slogan p {
+        font-family: Open Sans, sans-serif;
+        text-align: center;
+        text-justify: inter-character;
+        line-height: 5.4vw;
+        margin: 3.3vw auto;
+        margin-bottom: 4vw;
+        font-size: 3.9vw;
+        padding: 20px;
+        letter-spacing: -0.03em;
+      }
+      div input {
+        box-sizing: border-box;
+        width: 79vw;
+        height: 10vw;
+        font-size: 16px;
+        border-width: 1px;
+        border-color: #707070;
+        background-color: #ffffff;
+        color: #000000;
+        border-style: solid;
+        border-radius: 1vw;
+        padding-left: 5vw;
+      }
+
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+      }
+      div input::placeholder {
+        transform: translateY(12%);
+        display: block;
+        font-family: open sans, sans-serif;
+        font-size: 3.3vw;
+        opacity: 0.2;
+      }
+      .subscribe button {
+        margin-top: 5vw;
+        width: 79vw;
+        height: 10.5vw;
+        cursor: pointer;
+        outline: 0;
+        color: hsl(240, 75%, 98%);
+        background-color: hsl(224, 93%, 58%);
+        border-color: hsl(224, 93%, 58%);
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 3.7vw;
+        font-family: raleway;
+        font-weight: 700;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+
+      .subscribe button:hover {
+        color: #fff;
+        background-color: rgba(107, 155, 255, 255);
+        border-color: rgba(107, 155, 255, 255);
+      }
+      /* ------ SECTION 2 ------ */
+      .bgcurve-mobile {
+        margin-top: 23vw;
+        background-image: url(images/bg-curve-mobile.svg);
+        background-size: cover;
+        width: 100%;
+        height: 10vw;
+      }
+      .illustartion-2 {
+        margin: 0 auto;
+        padding-top: 21vw;
+        background-color: rgba(248, 248, 254, 255);
+        background-image: url(images/illustration-2.svg);
+        background-size: contain;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 84vw;
+        height: 70vw;
+      }
+      .slogan2 h2 {
+        font-family: Raleway, sans-serif;
+        font-size: 4.2vw;
+        font-weight: 700;
+        text-align: center;
+        margin: 9.5vw 0 6.9vw;
+      }
+      .slogan2 p {
+        font-family: open-sans, sans-serif;
+        font-weight: 200;
+        font-size: 4.1vw;
+        line-height: 5.4vw;
+        color: hsl(238, 22%, 44%);
+        letter-spacing: -0.02em;
+      }
+      .slogan2 p + p {
+        margin-top: 4vw;
+      }
+      .link {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 9.4vw auto;
+        width: 34vw;
+        padding-bottom: 0.5vw;
+        cursor: pointer;
+        color: hsl(170, 45%, 43%);
+        background-color: transparent;
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
+        border-bottom: 1px solid hsl(170, 45%, 43%);
+        text-decoration: none;
+        font-size: 3.2vw;
+        font-family: open-sans, sans-serif;
+        font-weight: 400;
+      }
+      .link:hover {
+        color: rgba(176, 225, 218, 255);
+        border-bottom: 1px solid rgba(176, 225, 218, 255);
+      }
+      .link img {
+        position: relative;
+        width: 4vw;
+        top: 1vw;
+        margin-left: 1vw;
+      }
+      .quote {
+        margin: 0 auto;
+        background-color: #ffffff;
+        width: 60vw;
+        border-radius: 1.5vw;
+        padding: 5vw 6.5vw;
+        height: auto;
+        -webkit-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.25);
+      }
+      .quote img {
+        padding-bottom: 2vw;
+        width: 3vw;
+      }
+      .quote p {
+        font-family: open-sans, sans-serif;
+        font-size: 2.7vw;
+        line-height: 5vw;
+        margin-bottom: 3.4vw;
+      }
+      .author {
+        display: flex;
+      }
+      .author .authorphoto {
+        background-image: url(images/avatar-testimonial.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin-right: 1vw;
+        width: 6vw;
+        height: 6vw;
+      }
+      .authorname {
+        width: 28vw;
+        margin-left: 1.1vw;
+        font-size: 2.7vw;
+        line-height: 3vw;
+        font-family: Raleway, sans-serif;
+      }
+      .authorname .name {
+        font-weight: 600;
+      }
+      .authorname .position {
+        font-size: 1.8vw;
+      }
+      .earlyaccess-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: hsl(238, 22%, 44%);
+      }
+      /* ------ SECTION 3 ------ */
+      .earlyaccess {
+        display: flex;
+        flex-basis: 88vw;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        font-family: Raleway, sans-serif;
+      }
+      .earlyaccess h2 {
+        text-align: center;
+        font-weight: 700;
+        margin-top: 15vw;
+        margin-bottom: 2vw;
+        font-size: 4.7vw;
+      }
+      .earlyaccess p {
+        padding: 4vw 11vw;
+        font-family: open-sans, sans-serif;
+        font-weight: 400;
+        font-size: 3.9vw;
+        text-align: center;
+        line-height: 5.4vw;
+        flex-basis: 21vw;
+      }
+      .button-ea {
+        /* transform: translateX(calc(50% - 32vw)); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .earlyaccess button {
+        margin-top: 2vw;
+        width: 62vw;
+        height: 8.6vw;
+        cursor: pointer;
+        outline: 0;
+        color: hsl(240, 75%, 98%);
+        background-color: hsl(224, 93%, 58%);
+        border-color: hsl(224, 93%, 58%);
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 2.8vw;
+        font-family: raleway;
+        font-weight: 700;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+
+      .earlyaccess button:hover {
+        color: #fff;
+        background-color: rgba(107, 155, 255, 255);
+        border-color: rgba(107, 155, 255, 255);
+      }
+      .earlyaccess input {
+        box-sizing: border-box;
+        margin-top: 2vw;
+        width: 62.5vw;
+        height: 8.5vw;
+        font-size: 16px;
+        border-width: 1px;
+        border-color: #707070;
+        background-color: #ffffff;
+        color: #000000;
+        border-style: solid;
+        border-radius: 0.15em;
+        padding-left: 7px;
+      }
+      .earlyaccess input::placeholder {
+        transform: translateY(12%);
+        font-family: open sans, sans-serif;
+        font-size: 2.7vw;
+        opacity: 0.2;
+      }
+      /* ------ FOOTER ------ */
+      .footer {
+        background-color: hsl(243, 87%, 12%);
+        display: flex;
+        justify-content: center;
+        height: 184vw;
+      }
+      .logo-down {
+        background-image: url(images/logo.svg);
+        width: 59vw;
+        height: 14vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        filter: brightness(0%) invert(100%);
+        -webkit-filter: brightness(0%) invert(100%);
+        -moz-filter: brightness(0%) invert(100%);
+      }
+      .footerwrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18vw;
+        font-family: open sans, sans-serif;
+        font-size: 4.4vw;
+        width: 80%;
+        color: #ffffff;
+      }
+      .contact {
+        margin: 10vw 0;
+      }
+      .contact img {
+        width: 5vw;
+      }
+      .contact p {
+        margin-bottom: 3vw;
+      }
+      .contact p + p {
+        margin-top: 7vw;
+      }
+      .contact span {
+        margin-left: 5vw;
+      }
+      .menu-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .menu-down1 {
+        flex-basis: 47vw;
+      }
+      .menu-down2 {
+        flex-basis: 47vw;
+      }
+      ul li a {
+        display: block;
+        width: 23vw;
+        margin: 5.5vw 0;
+        color: white;
+        text-decoration: none;
+      }
+      ul li a:hover {
+        color: rgba(93, 106, 175, 255);
+      }
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 35%;
+        justify-content: space-between;
+        transform: translateX(25vw);
+        margin-top: -3vw;
+      }
+      .social-media a:hover {
+        color: rgba(109, 154, 253, 255);
+      }
+      .social-media a {
+        text-align: center;
+        font-size: 3vw;
+        color: #ffffff;
+        border-radius: 50%;
+        line-height: 3vw;
+        border: 1px solid white;
+        padding: 2vw;
+        height: 3vw;
+        flex-basis: 3vw;
+      }
+      /* -- M E N U -- for 992px+ width */
+      @media (min-width: 992px) {
+        .logo img {
+          width: 11.6vw;
+          padding: 3.7vw 5vw 3vw 5.3vw;
+        }
+        .navhead {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-bottom: -0.5vw;
+          flex-basis: 19vw;
+          margin-right: 5vw;
+        }
+        .navhead a {
+          font-size: 1.2vw;
+        }
+        .menu-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 12vw;
+          padding: 0vw;
+        }
+        /* -- SECTION 1 -- for 992px+ width */
+        @media (min-width: 992px) {
+          .wrapper-slogan1 {
+            flex-direction: row;
+            min-height: 41vw;
+            min-width: 86vw;
+          }
+          .wrapperdesktop {
+            flex-basis: 100%;
+            min-height: 34vw;
+            display: flex;
+          }
+          .wrapper-content {
+            display: flex;
+            flex-direction: row;
+            margin-left: 4.6vw;
+            margin-right: 4.6vw;
+          }
+          .illustartion-1 {
+            margin-top: -5vw;
+            margin-left: 1vw;
+            margin-bottom: 0;
+            width: 100%;
+            height: 100%;
+            order: 1;
+            flex-grow: 1;
+          }
+          .slogan h2 {
+            font-family: raleway, sans-serif;
+            font-weight: 700;
+            font-size: 2.9vw;
+            text-align: left;
+            line-height: 4vw;
+            margin-left: 0.4vw;
+            transform: translateY(-1.9vw);
+            letter-spacing: -0.02em;
+          }
+          .slogan p {
+            box-sizing: content-box;
+            text-align: left;
+            line-height: 1.6vw;
+            margin-top: 0.2vw;
+            margin-bottom: 0vw;
+            transform: translateY(-1.9vw);
+            font-size: 1.3vw;
+            padding: 0.5vw;
+          }
+          div input {
+            width: 22vw;
+            height: 3vw;
+            margin-left: 0.8vw;
+            font-size: 16px;
+            border-radius: 0.2vw;
+            padding-left: 1vw;
+          }
+          .subscribe {
+            display: flex;
+            margin-top: 0vw;
+            margin-bottom: 6.1vw;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+          }
+          div input::placeholder {
+            font-size: 1.1vw;
+            line-height: 3vw;
+          }
+          .subscribe button {
+            margin-top: 0vw;
+            margin-left: 1vw;
+            width: 13.5vw;
+            height: 3.1vw;
+            line-height: 1.1vw;
+            font-size: 1vw;
+          }
+        }
+        /* -------*BGCURVE*------- */
+        @media (min-width: 992px) {
+          .bgcurve-mobile {
+            display: none;
+          }
+          .bgcurve-desktop {
+            margin-top: 5.5vw;
+            background-image: url(images/bg-curve-desktop.svg);
+            background-size: cover;
+            background-position: 50%;
+            width: 100%;
+            height: 10vw;
+          }
+        }
+        /* -- SECTION 2 -- for 992px+ width */
+        @media (min-width: 992px) {
+          .wrapper-bg {
+            background-color: rgba(248, 248, 254, 255);
+            height: 42.5vw;
+          }
+          .wrapper-content2 {
+            display: flex;
+            flex-direction: row;
+            width: 89.3%;
+          }
+          .illustartion-2 {
+            margin: 0 0vw 9vw auto;
+            padding-top: 0vw;
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            width: 42.4%;
+            height: 34vw;
+            order: 1;
+          }
+
+          .slogan2 h2 {
+            font-size: 2.8vw;
+            text-align: left;
+            margin: 1vw 0 2vw;
+          }
+          .slogan2 p {
+            width: 38vw;
+            margin-top: 3vw;
+            font-size: 1.2vw;
+            line-height: 1.55vw;
+          }
+          .slogan2 p + p {
+            margin-top: 1.2vw;
+          }
+          .link {
+            left: 0%;
+            transform: translateX(0%);
+            margin: 1.5vw auto;
+            width: 11.5vw;
+            padding-bottom: 0vw;
+            cursor: pointer;
+            color: hsl(170, 45%, 43%);
+            line-height: 1.2vw;
+            text-align: left;
+            font-size: 1.16vw;
+          }
+          .link img {
+            position: absolute;
+            width: 1vw;
+            top: 0.1vw;
+            margin-left: 0.2vw;
+          }
+          .quote {
+            box-sizing: content-box;
+            margin-left: 0.1px;
+            margin-top: 1.9vw;
+            background-color: #ffffff;
+            width: 20vw;
+            border-radius: 0.35em;
+            padding: 1vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            height: 12.9vw;
+            -webkit-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.35);
+          }
+          .quote img {
+            width: 1vw;
+            height: 1vw;
+            padding-bottom: 0.3vw;
+            margin-top: 1vw;
+          }
+          .quote p {
+            font-family: open-sans, sans-serif;
+            font-size: 1vw;
+            padding: 0vw;
+            line-height: 1.6vw;
+            margin-bottom: 0vw;
+          }
+          .author {
+            display: flex;
+            margin-top: 1.1vw;
+          }
+          .author .authorphoto {
+            background-image: url(images/avatar-testimonial.jpg);
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            margin-right: 0vw;
+            width: 3vw;
+            height: 2vw;
+          }
+          .authorphoto {
+            width: 4vw;
+            height: 3vw;
+            border-radius: 50%;
+          }
+          .authorname {
+            width: 28vw;
+            margin-left: 0.7vw;
+            font-size: 0.8vw;
+            line-height: 1vw;
+          }
+          .authorname .name {
+            font-weight: 600;
+          }
+          .authorname .position {
+            font-size: 0.6vw;
+          }
+        }
+        /* -- SECTION 3 EARLY ACCESS -- for 992px+ width */
+        @media (min-width: 992px) {
+          .earlyaccess-wrapper {
+            display: flex;
+            height: 22vw;
+            flex-direction: row;
+            align-content: center;
+          }
+          .earlyaccess {
+            display: flex;
+            flex-basis: 100%;
+            flex-direction: row;
+            align-items: center;
+          }
+          .earlyaccess h2 {
+            text-align: left;
+            font-weight: 700;
+            margin-top: 0vw;
+            font-size: 2.2vw;
+          }
+          .earlyaccess p {
+            box-sizing: content-box;
+            padding: 0vw 0vw 0vw 0vw;
+            width: 38vw;
+            font-family: open-sans, sans-serif;
+            font-weight: 400;
+            margin-top: 2vw;
+            font-size: 1.2vw;
+            text-align: left;
+            line-height: 1.5vw;
+            flex-basis: auto;
+          }
+          .earlyaccess button {
+            margin-top: 0.5vw;
+            margin-left: 3.5vw;
+            width: 14vw;
+            height: 3.3vw;
+            font-size: 1vw;
+            border-radius: 0.25em;
+            -webkit-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.35);
+          }
+          .earlyaccess input {
+            width: 32.8vw;
+            height: 3.3vw;
+            margin-top: 1.3vw;
+            margin-left: 3.5vw;
+            margin-bottom: 0.7vw;
+            border-width: 1px;
+            border-radius: 0.25em;
+          }
+          .earlyaccess input::placeholder {
+            font-size: 1vw;
+            transform: translateX(0%);
+          }
+          .button-ea {
+            box-sizing: border-box;
+            padding: 6vw;
+            flex-basis: 50%;
+            height: 100%;
+            flex-shrink: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            transform: translateX(0%);
+          }
+          .text-ea-wrapper {
+            flex-grow: 2;
+            margin-top: 1.7vw;
+            margin-left: 5.9vw;
+          }
+        }
+        /* -- FOOTER -- for 992px+ width */
+        @media (min-width: 992px) {
+          .wrapper-mobile-footer {
+            display: flex;
+          }
+          .logo-down {
+            background-image: url(images/logo.svg);
+            transform: translateY(7vw);
+            width: 12.5vw;
+            height: 4vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            filter: brightness(0%) invert(100%);
+            -webkit-filter: brightness(0%) invert(100%);
+            -moz-filter: brightness(0%) invert(100%);
+          }
+          .footer {
+            background-color: hsl(243, 87%, 12%);
+            display: flex;
+            justify-content: center;
+            height: 27vw;
+          }
+          .footerwrapper {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0vw;
+            font-family: open sans, sans-serif;
+            font-size: 1vw;
+            width: 90%;
+            color: #ffffff;
+          }
+          .contact {
+            margin: 8.5vw 0.2vw;
+            width: 18vw;
+          }
+          .contact img {
+            width: 1.3vw;
+          }
+          .contact p {
+            margin-bottom: 1.2vw;
+            font-size: 1.1vw;
+          }
+          .contact p + p {
+            margin-top: 1.6vw;
+          }
+          .contact span {
+            margin-left: 1.4vw;
+          }
+          .menu-container {
+            transform: translateY(7vw);
+            margin-left: 13vw;
+            height: 12vw;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+          }
+          .menu-down1 {
+            width: 10vw;
+            flex-basis: 0vw;
+          }
+          .menu-down2 {
+            margin-left: 12vw;
+            flex-basis: 0vw;
+          }
+          ul li a {
+            display: block;
+            width: 6vw;
+            margin: 1.6vw 0;
+            color: white;
+            text-decoration: none;
+          }
+          .social-media {
+            display: flex;
+            justify-content: center;
+            align-self: flex-start;
+            width: 8vw;
+            justify-content: center;
+            margin-left: 8vw;
+            transform: translateY(10.5vw);
+            height: 5vw;
+            align-items: center;
+          }
+        }
+        .social-media a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.7vw;
+          width: 0.01vw;
+          height: 0.01vw;
+          margin: -0.6vw;
+          border-radius: 100%;
+          transform: scale(50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-header">
+      <div class="logo"><img src="images/logo.svg" alt="" /></div>
+      <nav class="navhead">
+        <a href="#">
+          <p>Features</p>
+        </a>
+        <a href="#">
+          <p>Team</p>
+        </a>
+        <a href="#">
+          <p>Sign In</p>
+        </a>
+      </nav>
+    </div>
+    <div class="wrapper-content">
+      <div class="wrapper-slogan1">
+        <div class="illustartion-1"></div>
+        <div class="wrapperdesktop">
+          <div class="slogan">
+            <h2>All your files in one secure location, accessible anywhere.</h2>
+            <p>
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+          </div>
+          <div class="subscribe">
+            <input type="email" placeholder="Enter your email.." />
+            <button><p>Get Started</p></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bgcurve-mobile"></div>
+    <div class="bgcurve-desktop"></div>
+    <div class="wrapper-bg">
+      <div class="wrapper-content2">
+        <div class="illustartion-2"></div>
+        <div class="wrapper-top">
+          <div class="slogan2">
+            <h2>Stay productive, wherever you are</h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+          </div>
+          <a href="#" class="link">
+            <p>See how Fylo works<img src="images/icon-arrow.svg" /></p
+          ></a>
+          <div class="quote">
+            <img src="images/icon-quotes.svg" />
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="author">
+              <div class="authorphoto"></div>
+              <div class="authorname">
+                <span class="name">Kyle Burton<br /></span>
+                <span class="position">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="earlyaccess-wrapper">
+      <div class="earlyaccess">
+        <div class="text-ea-wrapper">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <div class="button-ea">
+          <input type="eaccess" placeholder="email@example.com" />
+          <button>Get Started For Free</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerwrapper">
+        <div class="logo-down"></div>
+        <div class="wrapper-mobile-footer">
+          <div class="contact">
+            <p class="telephone">
+              <img src="images/icon-phone.svg" /><span
+                >Phone: +1-543-123-4567</span
+              >
+            </p>
+            <p class="mail">
+              <img src="images/icon-email.svg" /><span>example@fylo.com</span>
+            </p>
+          </div>
+          <div class="menu-container">
+            <ul class="menu-down1">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <ul class="menu-down2">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <a href="#"
+              ><div class="facebook ico">
+                <i class="fa-brands fa-facebook-f"></i></div
+            ></a>
+            <a href="#"
+              ><div class="twitter ico">
+                <i class="fa-brands fa-twitter"></i></div
+            ></a>
+            <a href="#"
+              ><div class="instagram ico">
+                <i class="fa-brands fa-instagram"></i></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="frontendmentor">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sebastian Dominiak</a>.
+      </p>
+    </footer>
+  </body>
+</html>
