@@ -12,7 +12,9 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Continued development](#continued-development)
 - [Author](#author)
 
-## Overview
+## Links
+
+Live site URL: https://dominiak92.github.io/fylo-landing-page-with-two-column-layout-master/
 
 ### The challenge
 
