@@ -1,7 +1,5 @@
 # Fylo landing page with two column layout solution
 
-This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -10,7 +8,6 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-- [Author](#author)
 
 ## Links
 
@@ -43,7 +40,3 @@ I learned how to create responsive websites, on a mobile first basis, in the pro
 ### Continued development
 
 I need to work to make my CSS code more readable, to add more comments and use more semantic characters. I have a lot of work ahead of me, but I also learn hard from my mistakes.
-
-## Author
-
-- Frontend Mentor - [@sebix0nus](https://www.frontendmentor.io/profile/sebix0nus)
